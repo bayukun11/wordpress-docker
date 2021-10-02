@@ -5,6 +5,7 @@ Anda dapat membuat file untuk langsung menjalankan script dalam satu command, at
 2. Open file dan Paste-kan script berikut ini:
 
 #!/bin/sh
+
 mkdir -p /home/bayu/shopee/db
 sudo chown -R 27:27 /home/bayu/shopee/db
 sudo semanage fcontext -a -t container_file_t '/home/bayu/shopee/db(/.*)?'
