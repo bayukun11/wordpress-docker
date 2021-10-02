@@ -3,6 +3,7 @@
 Anda dapat membuat file untuk langsung menjalankan script dalam satu command, atau bisa juga menjalankan secara terpisah. Saya akan berikan untuk menjalankan sekaligus dalam satu script.
 1. Create file dengan nama wordpress-docker.sh
 2. Open file dan Paste-kan script berikut ini:
+
 #!/bin/sh
 mkdir -p /home/bayu/shopee/db
 sudo chown -R 27:27 /home/bayu/shopee/db
