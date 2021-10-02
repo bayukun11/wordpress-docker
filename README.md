@@ -7,8 +7,11 @@ Anda dapat membuat file untuk langsung menjalankan script dalam satu command, at
 #!/bin/sh
 
 mkdir -p /home/bayu/shopee/db
+
 sudo chown -R 27:27 /home/bayu/shopee/db
+
 sudo semanage fcontext -a -t container_file_t '/home/bayu/shopee/db(/.*)?'
+
 sudo restorecon -Rv /home/bayu/shopee/db
 
 sudo docker run -d --name wpdb \
